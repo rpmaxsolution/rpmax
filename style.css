@@ -266,11 +266,13 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(34, 34, 34, 0.6); /* cor escura com 60% opacidade */
+  backdrop-filter: blur(10px); /* aplica o efeito embaçado */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
   color: white;
   justify-content: space-around;
   padding: 8px 0;
-  border-top: 2px solid #444;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 999;
 }
 
