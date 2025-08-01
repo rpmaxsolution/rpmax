@@ -31,7 +31,7 @@ header {
 
 /* Para garantir que o conteúdo não fique escondido atrás da navbar */
 body {
-  padding-top: 120px; /* Ajuste esse valor conforme a altura da sua navbar */
+  padding-top: 0px; /* Ajuste esse valor conforme a altura da sua navbar */
 }
 
 .nav-links {
