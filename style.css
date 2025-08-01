@@ -19,6 +19,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Ou a cor que preferir */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+/* Para garantir que o conteúdo não fique escondido atrás da navbar */
+body {
+  padding-top: 80px; /* Ajuste esse valor conforme a altura da sua navbar */
+}
 }
 .nav-links {
   display: flex;
