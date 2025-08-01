@@ -246,6 +246,7 @@ footer {
   }
 }
 
+/* Menu Fixo Mobile */
 .menu-fixo-mobile {
   display: none; /* Oculta no desktop */
   position: fixed;
