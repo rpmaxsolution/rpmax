@@ -55,7 +55,7 @@ body {
 /* Hero */
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(221, 118, 1, 0.6), rgba(0, 0, 0, 0.651)), center/cover;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0.651)), center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
