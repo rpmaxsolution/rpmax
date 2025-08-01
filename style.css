@@ -55,8 +55,7 @@ body {
 /* Hero */
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://source.unsplash.com/1600x900/?technology') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
