@@ -107,14 +107,16 @@ section {
 }
 
 .sobre p {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  word-break: normal; 
+  overflow-wrap: break-word;
 }
 
 .sobre p strong {
