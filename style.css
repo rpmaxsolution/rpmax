@@ -112,7 +112,7 @@ section {
   color: #333;
   margin-bottom: 16px;
   text-align: justify;
-  hyphens: none;
+  hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   word-break: normal;
