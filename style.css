@@ -46,15 +46,10 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
 
 /* Hero */
 .hero {
-  height: 80vh;
+  height: 90vh;
   background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0.89)), center/cover;
   display: flex;
   justify-content: center;
@@ -81,12 +76,66 @@ body {
 
 /* Seções */
 section {
-  padding: 50px 20px;
+  padding: 50vh 20px;
   text-align: center;
 }
+.sobre {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  color: #111;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.sobre h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #bb4b00;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
 .sobre p {
-  max-width: 600px;
-  margin: auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.sobre p strong {
+  color: #f56e00;
+  font-weight: 600;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .sobre {
+    padding: 60px 15px;
+  }
+
+  .sobre h2 {
+    font-size: 2rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+  }
+}
 }
 
 /* Serviços */
@@ -98,7 +147,7 @@ section {
 }
 .card {
   background: #f5f5f5;
-  padding: 20px;
+  padding: 28px;
   border-radius: 10px;
   width: 250px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
