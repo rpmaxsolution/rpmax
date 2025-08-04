@@ -20,23 +20,29 @@
     </select>
     <button onclick="salvarProduto()" id="btnSalvar">Cadastrar</button>
 
-    <h3>Produtos Cadastrados</h3>
-    
-    <!-- Campo de Pesquisa -->
-    <input type="text" id="pesquisa" class="search-box" placeholder="Pesquisar por nome ou categoria..." onkeyup="filtrarProdutos()">
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Preço</th>
-                <th>Qtd</th>
-                <th>Categoria</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody id="listaProdutos"></tbody>
-    </table>
+    <h3>Pesquisar Produtos</h3>
+    <input type="text" id="pesquisa" class="search-box" placeholder="Digite para pesquisar..." onkeyup="filtrarProdutos()">
+</div>
+
+<!-- Modal para mostrar resultados -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h3>Resultados da Pesquisa</h3>
+        <div id="mensagem" class="mensagem" style="display:none;">Nenhum produto encontrado</div>
+        <table id="tabelaProdutos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Qtd</th>
+                    <th>Categoria</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaProdutos"></tbody>
+        </table>
+    </div>
 </div>
 
 <script src="teste.js"></script>

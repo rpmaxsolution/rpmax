@@ -21,13 +21,25 @@ function salvarProduto() {
     }
 
     localStorage.setItem('produtos', JSON.stringify(produtos));
-    exibirProdutos();
     limparCampos();
 }
 
-function exibirProdutos(lista = produtos) {
+function exibirProdutos(lista) {
     const tbody = document.getElementById('listaProdutos');
+    const tabela = document.getElementById('tabelaProdutos');
+    const mensagem = document.getElementById('mensagem');
+
     tbody.innerHTML = '';
+
+    if (lista.length === 0) {
+        tabela.style.display = 'none';
+        mensagem.style.display = 'block';
+        return;
+    }
+
+    tabela.style.display = 'table';
+    mensagem.style.display = 'none';
+
     lista.forEach((p, index) => {
         tbody.innerHTML += `<tr>
             <td>${p.nome}</td>
@@ -50,13 +62,14 @@ function editarProduto(index) {
     document.getElementById('categoria').value = p.categoria;
     document.getElementById('btnSalvar').textContent = "Salvar Alteração";
     editIndex = index;
+    fecharModal();
 }
 
 function excluirProduto(index) {
     if (confirm("Deseja realmente excluir este produto?")) {
         produtos.splice(index, 1);
         localStorage.setItem('produtos', JSON.stringify(produtos));
-        exibirProdutos();
+        filtrarProdutos();
     }
 }
 
@@ -69,11 +82,24 @@ function limparCampos() {
 
 function filtrarProdutos() {
     const termo = document.getElementById('pesquisa').value.toLowerCase();
+    if (termo === '') {
+        fecharModal();
+        return;
+    }
+
     const filtrados = produtos.filter(p => 
         p.nome.toLowerCase().includes(termo) || 
         p.categoria.toLowerCase().includes(termo)
     );
+
     exibirProdutos(filtrados);
+    abrirModal();
 }
 
-exibirProdutos();
+function abrirModal() {
+    document.getElementById('modal').style.display = 'flex';
+}
+
+function fecharModal() {
+    document.getElementById('modal').style.display = 'none';
+}
