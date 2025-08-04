@@ -120,14 +120,14 @@ section {
 }
 
 .sobre p strong {
-  color: #24be16;
+  color: #ee6e05;
   font-weight: 600;
 }
 
 /* Responsivo */
 @media screen and (max-width: 768px) {
   .sobre {
-    padding: 100px 15px;
+    padding: 120px 15px;
   }
 
   .sobre h2 {
