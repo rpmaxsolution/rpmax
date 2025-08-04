@@ -50,13 +50,18 @@ body {
 /* Hero */
 .hero {
   height: 90vh;
-  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0.89)), center/cover;
+  width: 100%;
+  background-image: url('imagens/fdhero/bckhero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(231, 231, 231);
   text-align: center;
 }
+
 .hero h2 {
   font-size: 3rem;
 }
