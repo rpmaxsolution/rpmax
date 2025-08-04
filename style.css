@@ -127,7 +127,7 @@ section {
 /* Responsivo */
 @media screen and (max-width: 768px) {
   .sobre {
-    padding: 120px 15px;
+    padding: 140px 15px;
   }
 
   .sobre h2 {
