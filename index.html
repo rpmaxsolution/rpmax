@@ -164,20 +164,45 @@
     </div>
   </section>
 
-  <!-- Contato -->
-  <section class="contato" id="contato">
-    <h2>Contato</h2>
-    <form action="https://formsubmit.co/rpmaxsolution@gmail.com" method="POST">
-  <input type="text" name="name" placeholder="Seu nome" required>
-  <input type="email" name="email" placeholder="Seu e-mail" required>
-  <textarea name="message" placeholder="Sua mensagem" required></textarea>
-  <button type="submit" class="btn">Enviar</button>
+ <!-- Contato -->
+<section class="contato" id="contato">
+  <h2>Fale Conosco</h2>
+  <div class="contato-container">
+    
+    <!-- Formulário -->
+    <div class="contato-formulario">
+      <form action="https://formsubmit.co/rpmaxsolution@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone (opcional)">
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
 
-  <!-- Proteções e configurações -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="box">
-</form>
-  </section>
+        <!-- Proteções -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+      </form>
+    </div>
+
+    <!-- Informações -->
+    <div class="contato-info">
+      <h3>Informações de Contato</h3>
+      <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:contato@rpmax.com.br">contato@rpmax.com.br</a></p>
+      <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5511994616174" target="_blank">(11) 99461-6174</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Endereço: Av. Exemplo, 123 - Centro, São Paulo - SP</p>
+      <p><i class="fas fa-clock"></i> Atendimento: Segunda a Sexta, das 08h às 18h</p>
+
+      <div class="contato-redes">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
   <nav class="menu-fixo-mobile">
   <a href="#home"><span>🏠</span><small>Início</small></a>
