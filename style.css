@@ -26,7 +26,7 @@ header {
   background-color: #020000;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(206, 110, 0, 0.1);
-  padding: 10px 20px;
+  padding: 28px 20px;
 }
 
 /* Para garantir que o conteúdo não fique escondido atrás da navbar */
