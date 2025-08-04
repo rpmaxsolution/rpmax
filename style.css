@@ -87,7 +87,7 @@ section {
 .sobre {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 180px 20px;
+  padding: 80px 20px;
   background-color: #f9f9f9;
   border-radius: 20px;
   box-shadow: 0 0 20px rgb(0, 0, 0);
@@ -132,7 +132,7 @@ section {
 /* Responsivo */
 @media screen and (max-width: 768px) {
   .sobre {
-    padding: 80px 15px;
+    padding: 120px 15px;
   }
 
   .sobre h2 {
