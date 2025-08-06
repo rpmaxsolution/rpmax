@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apresentação da Empresa</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 650px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-top: 5px solid #ff6600;
+  }
+
+  .header {
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .header p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .content {
+    padding: 25px 30px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .content h2 {
+    color: #ff6600;
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center;
+    background: #f9fafc;
+    padding: 14px;
+    border-radius: 8px;
+    border-left: 5px solid #ff6600;
+  }
+
+  .service-item i {
+    font-size: 28px;
+    color: #ff6600;
+    margin-right: 15px;
+    width: 35px;
+    text-align: center;
+  }
+
+  .service-item .text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .service-item .text p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .cta {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .cta a {
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: inline-block;
+  }
+
+  .cta a:hover {
+    background: #e05500;
+  }
+
+  .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    margin: 0 8px;
+    color: #ff6600;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    .service-item i {
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <div class="header">
+      <img src="https://rpmaxsolution.com.br/imagens/Logo/logo.png" width="400">
+      <p>Conectando ideias e transformando em resultados</p>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="content">
+      <h2>Olá EasyDentes,</h2>
+      <p>Somos a <strong>RPMAX Solution</strong>, especialistas em soluções digitais e comunicação visual para empresas que desejam se destacar no mercado.<br>
+      Eu sou <strong>Alexandre Santos</strong>, responsável pelo desenvolvimento web e comunicação visual. </p>
+      <p>Confira alguns dos nossos serviços:</p>
+
+      <!-- Serviços -->
+      <div class="services">
+        <div class="service-item">
+          <i class="fa-solid fa-code"></i>
+          <div class="text">
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites institucionais, lojas virtuais e landing pages responsivas e otimizadas.</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-print"></i>
+          <div class="text">
+            <h3>Comunicação Visual</h3>
+            <p>Impressões gráficas como cartões de visita, receituários, pastas personalizadas e muito mais.</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-pen-nib"></i>
+          <div class="text">
+            <h3>Design Personalizado</h3>
+            <p>Criação de identidade visual completa para fortalecer sua marca.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta">
+        <a href="http://wa.me/5511994646174">Quero saber mais</a>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+      <p>Alexandre Santos | Ger. Comercial | (11) 99464-6174</p>
+      <p><a href="www.rpmaxsolution.com.br">www.rpmaxsolution.com.br</a></p>
+      <div class="social-icons">
+        <a href="[Instagram]"><i class="fa-brands fa-instagram"></i></a>
+        <a href="[Facebook]"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
